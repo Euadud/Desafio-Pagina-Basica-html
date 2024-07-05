@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Poppins:wght@300;500;800&display=swap');
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body{
+  background-color: #F0FFFF;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: gap;
+}
+
+nav{
+  height: 50px;
+  background-color: deepskyblue;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+a{
+ text-decoration: none;
+ color: white;
+}
+
+a:hover{
+  border-bottom: 4px solid black;
+  transition: 0.3s all;
+  border-radius: 2px;
+  transform: scale(1.1);
+}
+
+.btn{
+  background-color: cyan;
+  border-radius: 10px;
+  border: none;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.btn:hover{
+  background-color: deepskyblue;
+  color: cyan;
+  transition: 0.3s all;
+}
+
+.main-site{
+  text-align: center;
+}
+
+.image{
+  width: 100%;
+  height: auto;
+}
+
+/*deixando responsivo, ainda estou estudando a responsividade*/
+
+@media (max-width: 410px) {
+  nav{
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+    height: 10%;
+    font-size: 10pt;
+      }
+
+      h1{
+        font-size: 15pt;
+      }
+}
